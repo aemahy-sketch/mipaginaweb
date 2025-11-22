@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página actualizado -->
+    <title>Energía Renovable: Biomasa, Recurso y Técnica</title> 
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y un tema visual enfocado en biomasa -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fbeb; /* Fondo verde muy claro / crema */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+        /* Estilo para las barras de progreso */
+        .bar-label {
+            width: 120px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Título Principal del Dashboard (MODIFICADO) -->
+        <header class="mb-10 text-center bg-green-700 p-6 rounded-xl shadow-2xl">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+                Energía Renovable: Biomasa, Recurso y Técnica
+            </h1>
+            <!-- Subtítulo simplificado -->
+            <p class="text-xl text-yellow-300 mt-2 font-semibold">
+                Análisis Detallado de un Recurso Sostenible
+            </p>
+        </header>
+
+        <!-- 1. SECCIÓN: INTRODUCCIÓN -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-700 border-b-4 border-amber-500 pb-2 mb-6">
+                1. Introducción
+            </h2>
+            <div class="card p-6 bg-yellow-50">
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    La biomasa representa uno de los pilares más versátiles y antiguos de las energías renovables. Este manual explora cómo la materia orgánica, proveniente de residuos forestales, agrícolas o cultivos dedicados, se convierte en una fuente vital de energía térmica, eléctrica y para transporte, jugando un rol esencial en la mitigación del cambio climático y la seguridad energética local.
+                </p>
+            </div>
+        </section>
+        
+        <!-- 2. SECCIÓN: QUÉ ES BIOMASA -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-700 border-b-4 border-amber-500 pb-2 mb-6">
+                2. ¿Qué es Biomasa?
+            </h2>
+            
+            <!-- Contenedor con distribución ajustada (3/4 texto, 1/4 imagen) -->
+            <div class="card p-4 md:p-8 bg-green-50 grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
+                
+                <div class="lg:col-span-3 space-y-4">
+                    <h3 class="text-2xl font-bold text-green-800">Definición y Fuentes</h3>
+                    <p class="text-lg text-slate-700">
+                        La biomasa es la **materia orgánica** originada en un proceso biológico, espontáneo o provocado, utilizada para producir energía. Las fuentes principales incluyen: residuos agrícolas (paja, cáscaras), residuos forestales (madera, podas), subproductos de la industria (licores negros, serrín) y cultivos energéticos dedicados.
+                    </p>
+                    <!-- Iconos de Fuentes (Estilo visual) -->
+                    <div class="flex space-x-4 text-slate-600">
+                        <span class="flex items-center"><span class="text-2xl mr-2">🌲</span> Forestal</span>
+                        <span class="flex items-center"><span class="text-2xl mr-2">🌾</span> Agrícola</span>
+                        <span class="flex items-center"><span class="text-2xl mr-2">🏭</span> Industrial</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder de Imagen Conceptual (Columna 1, Centrada, con ancho limitado) -->
+                <div class="lg:col-span-1 flex justify-center">
+                    <img src="https://placehold.co/400x200/4c7c5b/white?text=Biomasa+Energ%C3%A9tica" 
+                         alt="Imagen conceptual de Biomasa Energética" 
+                         class="rounded-xl w-full h-auto shadow-lg max-w-xs"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x200/4c7c5b/white?text=Carga+de+Energ%C3%ADa';">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN: FUENTES Y CARACTERÍSTICAS TÉCNICAS -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-700 border-b-4 border-amber-500 pb-2 mb-6">
+                3. Fuentes del Recurso Biomásico y Características Técnicas
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Tarjeta de Fuentes -->
+                <div class="card p-6 bg-slate-50 lg:col-span-1">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Fuentes de la Biomasa</h3>
+                    <p class="text-sm text-slate-600 mb-4">
+                        Según su origen, se clasifican en distintos grupos, lo cual define su manejo y potencial energético.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2 text-base">
+                        <li class="font-medium text-green-800">Residuos Agrícolas y Forestales</li>
+                        <li class="font-medium text-green-800">Cultivos Energéticos Dedicados</li>
+                        <li class="font-medium text-green-800">Residuos Sólidos Urbanos (RSU)</li>
+                        <li class="font-medium text-green-800">Residuos de la Industria (Subproductos)</li>
+                        <li class="font-medium text-green-800">Biogás (de vertederos o digestión)</li>
+                    </ul>
+                </div>
+
+                <!-- GRÁFICO DE BARRAS SIMULADO: Humedad vs. VC -->
+                <div class="card p-6 lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Relación Inversa: Humedad y Poder Calorífico (VC)</h3>
+                    <p class="text-sm text-slate-600 mb-6">El valor calorífico es el aspecto técnico más crítico, directamente afectado por el contenido de agua.</p>
+                    
+                    <!-- Simulación Biomasa Seca -->
+                    <div class="mb-6 space-y-2">
+                        <p class="font-bold text-green-600">Biomasa Seca (Optimizada)</p>
+                        <div class="flex items-center text-sm">
+                            <span class="bar-label font-medium text-slate-700">Humedad (10%):</span>
+                            <div class="w-1/5 h-5 bg-green-200 rounded-l-full"></div>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="bar-label font-medium text-slate-700">VC (90%):</span>
+                            <div class="w-4/5 h-5 bg-green-600 rounded-l-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Simulación Biomasa Húmeda -->
+                    <div class="space-y-2">
+                        <p class="font-bold text-amber-600">Biomasa Húmeda (Sin Procesar)</p>
+                        <div class="flex items-center text-sm">
+                            <span class="bar-label font-medium text-slate-700">Humedad (50%):</span>
+                            <div class="w-1/2 h-5 bg-orange-300 rounded-l-full"></div>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="bar-label font-medium text-slate-700">VC (50%):</span>
+                            <div class="w-1/2 h-5 bg-orange-600 rounded-l-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INTERACCIÓN: Contenido de Humedad -->
+                <div class="card p-6 bg-slate-50 lg:col-span-3">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Características Clave: Humedad y Densidad</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-lg font-bold text-slate-800">Contenido de Humedad (H)</p>
+                            <div id="humedad-content" class="mt-2">
+                                <!-- Estado inicial -->
+                                <p class="text-slate-600 mb-4">
+                                    El contenido de humedad es clave para la eficiencia, ya que el agua requiere energía para evaporarse antes de que el calor esté disponible.
+                                </p>
+                                <p class="text-sm italic text-slate-500">
+                                    Haz clic para conocer las dos bases de medición de humedad utilizadas en la técnica de biomasa.
+                                </p>
+                            </div>
+                            <button onclick="toggleHumedadDefinition()" 
+                                    class="mt-4 px-4 py-2 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition duration-300 shadow-md">
+                                Definición Técnica
+                            </button>
+                        </div>
+                        
+                        <div>
+                            <!-- Título de Densidad Aparente (modificado en el paso anterior) -->
+                            <p class="text-lg font-bold text-slate-800">Densidad Aparente</p>
+                            <p class="text-slate-600 mt-2">
+                                Mide la masa por unidad de volumen y es crucial para el diseño de sistemas de almacenamiento, transporte y alimentación de calderas. Una mayor densidad mejora la logística.
+                            </p>
+                            <p class="text-sm text-slate-500 italic mt-2">
+                                Ejemplos: Leña (Baja), Pellets (Alta).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN: CONVIRTIENDO BIOMASA EN ENERGÍA (Vías de Transformación) -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-700 border-b-4 border-amber-500 pb-2 mb-6">
+                4. Conversión: Vías de Transformación
+            </h2>
+            
+            <p class="text-lg text-slate-600 mb-6">La vía de transformación elegida depende de la humedad, la densidad y la aplicación final deseada.</p>
+
+            <!-- Elemento de Interacción (Tarjetas Hover) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Vía 1: Combustión -->
+                <div class="card hover-card p-6 relative group overflow-hidden">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">Combustión Directa</h3>
+                    <p class="text-sm text-slate-600">
+                        El proceso termoquímico más común, usado para producir calor y electricidad.
+                    </p>
+                    <!-- Overlay de Interacción -->
+                    <div class="absolute inset-0 bg-green-800 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex items-center justify-center p-4 rounded-xl">
+                        <p class="text-white text-center font-medium">
+                            Implica quemar la biomasa en presencia de aire, siendo eficiente para biomasa seca.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vía 2: Gasificación -->
+                <div class="card hover-card p-6 relative group overflow-hidden">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">Gasificación</h3>
+                    <p class="text-sm text-slate-600">
+                        Proceso termoquímico que genera un gas combustible de bajo poder calorífico (Syngas).
+                    </p>
+                    <!-- Overlay de Interacción -->
+                    <div class="absolute inset-0 bg-green-800 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex items-center justify-center p-4 rounded-xl">
+                        <p class="text-white text-center font-medium">
+                            La biomasa reacciona a alta temperatura con un agente gasificante controlado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vía 3: Bioquímicas -->
+                <div class="card hover-card p-6 relative group overflow-hidden">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">Bioquímicas / Pirólisis</h3>
+                    <p class="text-sm text-slate-600">
+                        Digestión anaeróbica o procesos de alta temperatura que producen biocombustibles líquidos.
+                    </p>
+                    <!-- Overlay de Interacción -->
+                    <div class="absolute inset-0 bg-green-800 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex items-center justify-center p-4 rounded-xl">
+                        <p class="text-white text-center font-medium">
+                            Procesos para obtener metano (biogás) o líquidos (bio-aceites, bioetanol).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SECCIÓN: APLICACIONES (VISIBILIDAD MEJORADA) -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-700 border-b-4 border-amber-500 pb-2 mb-6">
+                5. Aplicaciones Clave de la Biomasa
+            </h2>
+            
+            <p class="text-lg text-slate-600 mb-6">Las principales salidas de la biomasa se centran en tres áreas cruciales para el consumo energético.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Aplicación 1: Energía Térmica (Calefacción) -->
+                <div class="card p-6 border-b-4 border-amber-500 hover-card bg-white shadow-lg">
+                    <div class="text-5xl mb-3 text-amber-600">🔥</div>
+                    <h3 class="text-xl font-extrabold text-slate-800 mb-2">Energía Térmica (Calefacción)</h3>
+                    <p class="text-sm text-slate-600">
+                        Es el uso más común. Se utiliza directamente para generar calor en sistemas de calefacción distrital, residencial e industrial (calderas y estufas de alto rendimiento).
+                    </p>
+                </div>
+
+                <!-- Aplicación 2: Generación Eléctrica (Central Eléctrica) -->
+                <div class="card p-6 border-b-4 border-green-500 hover-card bg-white shadow-lg">
+                    <div class="text-5xl mb-3 text-green-600">⚡</div>
+                    <h3 class="text-xl font-extrabold text-slate-800 mb-2">Generación Eléctrica</h3>
+                    <p class="text-sm text-slate-600">
+                        Centrales termoeléctricas dedicadas convierten la biomasa en electricidad a gran escala. La cogeneración aumenta la eficiencia total del proceso.
+                    </p>
+                </div>
+
+                <!-- Aplicación 3: Biocombustibles (Transporte) -->
+                <div class="card p-6 border-b-4 border-yellow-700 hover-card bg-white shadow-lg">
+                    <div class="text-5xl mb-3 text-yellow-700">⛽</div>
+                    <h3 class="text-xl font-extrabold text-slate-800 mb-2">Biocombustibles (Transporte)</h3>
+                    <p class="text-sm text-slate-600">
+                        Productos líquidos y gaseosos (bioetanol, biodiésel, biogás) utilizados como sustitutos en motores de transporte.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SECCIÓN: ASPECTOS AMBIENTALES -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-slate-700 border-b-4 border-amber-500 pb-2 mb-6">
+                6. Aspectos Ambientales y Sostenibilidad
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Tarjeta 1: Neutralidad de Carbono (TÍTULO Y TEXTO ACTUALIZADOS) -->
+                <div class="card p-6 bg-green-100 border-l-4 border-green-700">
+                    <h3 class="text-xl font-bold text-green-800 mb-2 flex items-center">
+                        <span class="text-2xl mr-2">🌍</span> Neutralidad de CO2
+                    </h3>
+                    <p class="text-slate-700">
+                        La biomasa es considerada carbono-neutral en su ciclo de vida. El CO2 liberado durante la combustión es el mismo que el material orgánico absorbió al crecer, a diferencia de los combustibles fósiles.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2: Reducción de Residuos -->
+                <div class="card p-6 bg-green-100 border-l-4 border-green-700">
+                    <h3 class="text-xl font-bold text-green-800 mb-2 flex items-center">
+                        <span class="text-2xl mr-2">♻️</span> Gestión de Residuos
+                    </h3>
+                    <p class="text-slate-700">
+                        Permite la valorización energética de residuos que de otra forma irían a vertederos (residuos agrícolas, forestales, etc.), reduciendo la contaminación y el uso del suelo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conclusión Final (Modificada para la nueva estructura) -->
+            <div class="mt-8 p-6 card bg-green-200 border-l-4 border-slate-700">
+                <p class="text-xl font-semibold text-slate-800">Cierre Conceptual:</p>
+                <p class="text-lg text-slate-700 mt-2">
+                    La biomasa no solo es un recurso renovable, sino una herramienta clave de la Economía Circular: transforma residuos en energía y ofrece una ruta hacia la **descarbonización térmica**, siendo su gestión técnica (especialmente la humedad) la clave para maximizar su eficiencia y sus beneficios ambientales.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Pie de página -->
+        <footer class="mt-10 pt-4 border-t border-slate-300 text-center text-sm text-slate-500">
+            Fuente de Contenido: Síntesis del Manual de Biomasa.
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript para la interacción de la Sección 3 (Contenido de Humedad)
+        function toggleHumedadDefinition() {
+            const contentDiv = document.getElementById('humedad-content');
+            const button = event.target;
+
+            // Define el contenido expandido basado en el manual
+            const expandedContent = `
+                <p class="text-slate-700 mb-4 font-bold">La humedad se puede medir en dos bases:</p>
+                <ul class="list-disc list-inside text-sm text-slate-700 space-y-2">
+                    <li><span class="font-semibold text-green-700">Base Seca:</span> La fracción del peso del agua respecto al peso del material seco.</li>
+                    <li><span class="font-semibold text-green-700">Base Húmeda:</span> La fracción del peso del agua respecto al peso total del material (agua + material seco).</li>
+                </ul>
+                <p class="text-xs italic text-red-600 mt-3">
+                    El valor en base húmeda siempre es más bajo que en base seca, por lo que la indicación de la base de medición es fundamental.
+                </p>
+            `;
+
+            // Define el contenido original
+            const originalContent = `
+                <p class="text-slate-600 mb-4">
+                    El contenido de humedad es clave para la eficiencia, ya que el agua requiere energía para evaporarse antes de que el calor esté disponible.
+                </p>
+                <p class="text-sm italic text-slate-500">
+                    Haz clic para conocer las dos bases de medición de humedad utilizadas en la técnica de biomasa.
+                </p>
+            `;
+
+            // Verifica si el contenido actual es el original
+            if (button.textContent === 'Definición Técnica') {
+                contentDiv.innerHTML = expandedContent;
+                button.textContent = 'Ocultar Detalle';
+                button.classList.remove('bg-green-600');
+                button.classList.add('bg-red-600');
+            } else {
+                contentDiv.innerHTML = originalContent;
+                button.textContent = 'Definición Técnica';
+                button.classList.remove('bg-red-600');
+                button.classList.add('bg-green-600');
+            }
+        }
+    </script>
+</body>
+</html>
